@@ -1,0 +1,19 @@
+---
+applications:
+  .:
+    name: Navkar1
+    framework:
+      name: rails3
+      info:
+        mem: 256M
+        description: Rails Application
+        exec: 
+    infra: aws
+    url: Navkar1.aws.af.cm
+    mem: 128M
+    instances: 1
+    services:
+      navkar-mysql-16125:
+        type: mysql
+      navkarmantra-mysql-9551:
+        type: mysql
